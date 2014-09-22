@@ -18,4 +18,15 @@
 	'DB_PORT'=>'3306',
 	'DB_PREFIX'=>'yourphp_',
 );
+
+//Remote db connection
+// return array(
+// 	'DB_TYPE'=>'mysql',
+// 	'DB_HOST'=>'qdm-012.hichina.com',
+// 	'DB_NAME'=>'qdm0120165_db',
+// 	'DB_USER'=>'qdm0120165',
+// 	'DB_PWD'=>'huashengxiongdi',
+// 	'DB_PORT'=>'3306',
+// 	'DB_PREFIX'=>'yourphp_',
+// );
 ?>
