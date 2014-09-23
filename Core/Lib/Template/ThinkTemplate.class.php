@@ -142,7 +142,7 @@ class  ThinkTemplate {
         // 优化生成的php代码
         $tmplContent = str_replace('?><?php','',$tmplContent);
 		if(!YP_KEY){		
-			 $tmplContent =  str_replace('</title>',' - Powered by Yourphp</title>',$tmplContent);;
+			 $tmplContent =  str_replace('</title>',' - Powered by BCZ</title>',$tmplContent);;
 		}
         return strip_whitespace($tmplContent);
     }

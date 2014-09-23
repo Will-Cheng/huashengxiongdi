@@ -1,7 +1,7 @@
 <?php 
 return array(
-	'welcome'=>'欢迎使用Yourphp企业建站系统',
-	'system_name'=>'Yourphp企业建站系统',
+	'welcome'=>'欢迎使用BCZ企业建站系统',
+	'system_name'=>'BCZ企业建站系统',
 	'official_site' => '官方网站',
 	'authorization' => '授权',
 	'chaxun' => '查询',
