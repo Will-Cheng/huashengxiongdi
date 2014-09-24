@@ -92,14 +92,6 @@ class IndexAction extends AdminbaseAction
             'max_execution_time'=>ini_get('max_execution_time').L('miao'),
 			'disk_free_space'=>round((@disk_free_space(".")/(1024*1024)),2).'M',
             );
-		$yourphp_info=array(
-			'yourphp_VERSION'=> VERSION.' '.UPDATETIME.' [ <a href="http://www.yourphp.cn" target="_blank">'.L('view_new_VERSION').'</a> ]',			
-			'license'=> '<b id="Yourphp_license"></b>',
-			'SN'=> '<b id="Yourphp_sn"></b>',
-			'update'=>  ' <b id="Yourphp_update"></b>',
-			
-		);
-		$this->assign('yourphp_info',$yourphp_info);
         $this->assign('server_info',$info);		
 		foreach ((array)$this->module as $rw){
 			if($rw['type']==1){  
