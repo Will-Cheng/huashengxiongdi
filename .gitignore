@@ -3,3 +3,6 @@ hsxd.git.local-access.log
 hsxd.git.local-error.log
 hsxd.git.local-access.log
 Cache/config.php
+.tags
+.tags_sorted_by_file
+Uploads/
