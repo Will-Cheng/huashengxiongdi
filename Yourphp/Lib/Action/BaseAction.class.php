@@ -347,7 +347,6 @@ class BaseAction extends Action
 
 	public function down()
 	{
-
 		$module = $module ? $module : MODULE_NAME;
 		$id = $id ? $id : intval($_REQUEST['id']);
 		$this->dao= M($module);

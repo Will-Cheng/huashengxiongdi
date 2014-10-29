@@ -20,7 +20,7 @@ define('UPDATETIME','20121225');
 define('APP_NAME','Yourphp');
 define('APP_PATH','./Yourphp/');
 define('APP_LANG',true);
-define('APP_DEBUG',false);
+define('APP_DEBUG',true);
 define('THINK_PATH','./Core/');
 require(THINK_PATH.'Core.php');
 ?>

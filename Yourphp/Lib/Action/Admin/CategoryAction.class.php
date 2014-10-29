@@ -174,7 +174,6 @@ class CategoryAction extends AdminbaseAction
     public function edit()
     {
 		$id = intval($_GET['id']);
-
 		foreach((array)$this->Urlrule as $key =>$r){
 			if($r['ishtml'])$Urlrule[$key]=$r;
 		}
@@ -368,7 +367,7 @@ class CategoryAction extends AdminbaseAction
 
 	public function delete() {
 		$catid = intval($_GET['id']);
-		$module = $this->categorys[$catid]['module'];
+		$module = $modulename = $this->categorys[$catid]['module'];
 		if($this->categorys[$catid]['type']==1){
 			if($this->categorys[$catid]['arrchildid']!=$catid)$this->error(L('category_does_not_allow_delete'));
 			$this->dao->delete($catid);
@@ -377,10 +376,13 @@ class CategoryAction extends AdminbaseAction
 			$module  = M($module);
 			$arrchildid = $this->categorys[$catid]['arrchildid'];
 			$where =  "catid in(".$arrchildid.")";
-			$count = $module->where($where)->count();
-			if($count) $this->error(L('category_does_not_allow_delete'));
+			//Page bug
+			if ($modulename != 'Page') {
+				$count = $module->where($where)->count();
+				if($count) $this->error(L('category_does_not_allow_delete'));
+			}
 			$this->dao->delete($arrchildid);
-			$moduleid = $this->mod[$module];
+			$moduleid = $this->mod[$modulename];
 			delattach("moduleid =$moduleid and catid in($arrchildid)");
 			$arr=explode(',',$arrchildid);
 			foreach((array)$arr as $r){

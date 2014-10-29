@@ -43,7 +43,7 @@ a{ text-decoration: none }
 /* nav */
 .nav{ width: 960px; margin: 0 auto; overflow: hidden; height: 41px; }
 .nav ul{ height: 40px; }
-.nav ul li{ background: url(../images/nav_bg.png) repeat-x; float: left; height: 40px; width: 136px; color: #f9ecd3; text-align: center; font-size: 16px; font-weight: bold; line-height: 40px; }
+.nav ul li{ background: url(../images/nav_bg.png) repeat-x; float: left; height: 40px; width: 136px; color: #f9ecd3; text-align: center; font-size: 16px; line-height: 40px; }
 .nav ul li.v_line{ background: url(../images/nav_v.png) no-repeat left top; height: 40px; width: 1px; overflow: hidden; }
 .nav ul li.start{ background: url(../images/nav_left.png) no-repeat left top; }
 .nav ul li.end{  background: url(../images/nav_right.png) no-repeat right top; }
@@ -52,7 +52,7 @@ a{ text-decoration: none }
 
 /* content */
 .content{ width: 960px; margin: 0 auto; overflow: hidden; margin-top: 30px; }
-.content .menu{ float: left; width: 115px; height: 260px; overflow: hidden; background: url(../images/menu_bgt.png) no-repeat left top; }
+.content .menu{ float: left; width: 125px; height: 260px; overflow: hidden; background: url(../images/menu_bgt.png) no-repeat left top; }
 .content .menu ul{ padding-left: 20px; }
 .content .menu ul li{ height: 34px; line-height: 34px; overflow: hidden; font-size: 16px; color: #fbdaac; background: url(../images/menu_common.png) no-repeat left center; }
 .content .menu ul li a{ margin-left: 15px; display: inline; padding: 2px 5px; color: #fbdaac; background: url(../images/menu_a_common_bg.png) repeat-x left bottom; }
@@ -69,7 +69,7 @@ a{ text-decoration: none }
 
 .content .main .boxs{ padding-left: 20px; }
 .content .main .box{ float: left; width: 220px; margin-right: 50px; display: inline; margin-top: 20px; }
-.content .main .box .img{ background: #f9ecd3; width: 220px; height: 165px; }
+.content .main .box .img{ width: 220px; height: 165px; }
 .content .main .box .bottom{ height: 7px; width: 220px; background: url(../images/box_b.png) no-repeat; overflow: hidden; }
 .content .main .box .info{ height: 39px; background: #f9ecd3; }
 
@@ -90,11 +90,11 @@ a{ text-decoration: none }
 .content .corp ul li span.t_info{ width: 610px; line-height: 23px; font-size: 12px; }
 
 .content .corp .intro{ color: #4e2b12; line-height: 27px; font-size: 14px; padding: 0 45px; background: url(../images/corp_bg.png) repeat-y; overflow: hidden; }
-.content .corp .intro .left{ float: left; width: 340px; }
+.content .corp .intro .left{ float: left; width: 360px; }
 .content .corp .intro .right{ float: right; width: 370px; }
 .content .corp .intro .left h6{ font-size: 14px; font-weight: normal; line-height: 27px; border-bottom: 1px solid #ed8512; }
 .content .corp .intro .left h6.contact{ width: 260px; }
-.content .corp .intro .left h6.bus{ width: 190px; margin-top: 10px; }
+.content .corp .intro .left h6.bus{ width: 260px; margin-top: 10px; }
 .content .corp .intro .left .crop_name{ line-height: 47px; margin-top: 10px; }
 .content .corp .intro .left .addr{ line-height: 39px; padding-left: 40px; line-height: 39px; background: url(../images/corp_addr.jpg) no-repeat left center; }
 .content .corp .intro .left .phone{ line-height: 39px; padding-left: 40px; line-height: 39px; background: url(../images/corp_phone.jpg) no-repeat left center; }
@@ -136,13 +136,15 @@ a{ text-decoration: none }
 .business .business_content .business_right .attachment_info a{ color: #fff; font-size: 12px; font-weight: normal; }
 
 /* product story */
-.pstory{ background:url(../images/pstory_bg.png) no-repeat; height: 473px; width: 940px; margin: 0 auto; position: relative; top: -2px; padding-bottom: 30px; }/* 626 */
+.pstory{ background:url(../images/pstory_new_bg.png) no-repeat; height: 593px; width: 940px; margin: 0 auto; position: relative; top: -2px; padding-bottom: 30px; }/* 626 */
 .pstory .bar{ width: 888px; height: 102px; margin: 0 auto; padding-top: 27px; }
 .pstory .pic{ float: left; width: 252px; height: 324px; padding-top: 20px; padding-left: 50px; background: url(../images/pstory_pic_bg.png) no-repeat 30px 0px; }
 .pstory .pic img{ width: 225px; height: 301px; }
-.pstory .info{ float: left; width: 610px; height: 310px; padding-top: 16px; padding-left: 23px; background: url(../images/corp_arrow.png) no-repeat left 21px; }
-.pstory .info p{ color: #411c03; font-size: 12px; }
-.pstory .info p.more{ position: absolute; bottom: 48px; right: 45px; width: 50px; height: 22px; overflow: hidden; }
+/*.pstory .info{ float: left; width: 610px; height: 310px; padding-top: 16px; padding-left: 23px; background: url(../images/corp_arrow.png) no-repeat left 21px; }
+.pstory .info p{ color: #411c03; font-size: 12px; }*/
+.pstory p.more{ position: absolute; bottom: 44px; right: 45px; width: 50px; height: 22px; overflow: hidden; }
+.pstory .pic_info{ background: url(../images/corp_arrow.png) no-repeat 282px 20px; }
+.pstory .pic_info .info{ padding: 15px 25px 0 25px; font-size: 12px; }
 
 /* focus */
 .focus{ width: 900px; height: 375px; overflow: hidden; margin: 0 auto; padding: 20px 0; clear: both; position: relative; }
@@ -155,4 +157,39 @@ a{ text-decoration: none }
 .focus .btnBg{ position: absolute; bottom: 60px; width: 11px; padding:5px 11px 5px 0; height: 11px; background: #000; opacity: 0.2; border-radius: 5px; }
 .focus .btn span{ float: left; margin-left: 11px; display: inline; width: 11px; height: 11px; cursor: pointer; background: url(../images/focus_off.png); }
 .focus .btn span.hover{ background: url(../images/focus_on.png); }
-  
+ .page{float: left;margin-left: 140px;}
+ .page a{margin: 5px; font-weight: bold;}
+.scontent p{text-indent: 25px; padding: 10px 0;}
+.commonweal_img img{display: block; width:350px; height:352px; margin:40px auto;}
+/* product info */
+.product_info{ float: right; width: 830px; margin-bottom: 20px; }
+.product_info .pi_top { height: 30px; overflow: hidden; width: 815px; background: url(../images/corp_top.png) no-repeat; }
+.product_info .pi_bottom { height: 30px; overflow: hidden; width: 815px; background: url(../images/corp_bottom.png) no-repeat; }
+.product_info .pi_center{ background: url(../images/corp_bg.png) repeat-y; width: 815px; padding: 0 15px; }
+.product_info h4{ color: #411c03; font-size: 25px; text-align: center; line-height: 35px; }
+.product_info .pi_left{ float: left; width: 400px; margin-top: 15px; }
+.product_info .pi_right{ float: right; width: 400px; margin-top: 15px; }
+.pfocus{width:400px; height:325px; position:relative;  }
+.pfocus .btn{position:absolute;width:15px;height:70px;top:231px;cursor:pointer;z-index:99;font-size:50px;font-weight:bold;}
+.pfocus .prev{left:0;background:url(../images/prevBtn.png) no-repeat;}
+.pfocus #prevTop,.pfocus #nextTop{top:113px;width:46px;height:48px;}
+.pfocus #prevTop{background:url(../images/prevBtnTop.png) 0 0 no-repeat;}
+.pfocus #nextTop{background:url(../images/nextBtnTop.png) 0 0 no-repeat;}
+.pfocus .next{right:0;background:url(../images/nextBtn.png) no-repeat;}
+.pfocus li{float:left;}
+.pfocus .cf li{position:relative;color:#fff;}
+.pfocus .cf a{display:block; width:400px; height:225px; position:absolute; color:#fff;}
+.pfocus .picBox{height:225px; position: relative; overflow: hidden;}
+.pfocus .picBox ul{height:225px;position:absolute;}
+.pfocus .picBox li{width:400px;height:225px;}
+.pfocus .listBox{width:400px; height:100px; margin:0 auto; position:relative; padding:6px 0 10px;overflow:hidden;}
+.pfocus .listBox ul{height:100px;position:absolute;}
+.pfocus .listBox li{width:129px;height:70px;cursor:pointer;position:relative;}
+.pfocus .listBox li i{display:none;}
+.pfocus .listBox li a{display:block;width:124px;height:70px;}
+.pfocus .listBox li img{width:124px;height:70px;}
+.pfocus .listBox .on img{width:118px;height:64px;border:3px solid #411c03;}
+.pfocus .listBox .on i{display:block;}
+.product_info .pi_center_bottom{ clear: both; }
+.product_info .pi_center_bottom h6{ font-size: 18px; width: 785px; line-height: 25px; border-bottom: 1px solid #411c03; }
+.product_info .pi_center_bottom p{ width: 785px; line-height: 23px; font-size: 12px; }

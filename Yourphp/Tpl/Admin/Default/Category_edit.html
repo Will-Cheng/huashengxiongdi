@@ -178,6 +178,8 @@ function showtemplist(m,t){
 	var mtlist = modulearr[m]+type;
 	var mtshow = modulearr[m]+'_show';
 	if(modulearr[m]=='Page') mtlist=mtshow ='Page';
+	if(modulearr[m]=='Picture') mtlist=mtshow ='Picture';
+	if(modulearr[m]=='Download') mtlist=mtshow ='Download';
 	$('#template_list').html(datas);
 	$('#template_show').html(datas);
 	listdatas = showdatas ='';

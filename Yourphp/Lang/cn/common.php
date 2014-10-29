@@ -1,6 +1,6 @@
 <?php
 return array (
-  'HOME_FONT' => '网站首页',
+  'HOME_FONT' => '花生兄弟',
   'LOGIN' => '登陆',
   'REGISTER' => '注册',
   'CART' => '购物车',

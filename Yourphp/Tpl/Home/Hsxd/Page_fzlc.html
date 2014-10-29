@@ -1,0 +1,35 @@
+<div class="content">
+    <div class="menu">
+        <ul>
+            <Nav:leftmenu catid="catid">
+
+            </Nav:leftmenu>
+        </ul>
+    </div>
+    
+    <div class="corp">
+        <div class="top"></div>
+        {$content}
+        <div class="bottom"></div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+    $(".corp>ul>li").hover(function(){
+        var _this = this;
+        if($(_this).attr('class') == 'big'){
+            return false;
+        }
+        $(_this).addClass('mid');
+    }, function(){
+        var _this = this;
+        if($(_this).attr('class') == 'big'){
+            return false;
+        }
+        $(_this).removeClass('mid');
+    });
+
+
+</script>
